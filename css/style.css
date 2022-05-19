@@ -1,7 +1,6 @@
 body, p, h1, ul, li, blockquote{
     padding: 0px;
     margin: 0px;
-    background: rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -16,10 +15,9 @@ a {
     text-decoration: none;
 }
 
-img{
-    width: 100px;
+img {
+   max-width: 100%;
 }
-
 
 /* Grid Geral */
 
@@ -35,7 +33,43 @@ img{
 
 .header {
     grid-area: header;
+    background: linear-gradient(135deg, #8844ee, #B07DFB);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
 }
+
+.logo {
+    max-width: 200px;
+}
+
+.header nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    grid-gap: 1.5rem;
+}
+
+.header nav a {
+    padding: 10px;
+    color: white;
+    font-size: 1.125rem;
+    background: rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.header nav a:hover {
+    background: rgba(0, 0, 0, .5);
+}
+
+
+.header li + li {
+    margin-left: 30px;
+}
+
+
 
 .sidenav {
     grid-area: sidenav;
