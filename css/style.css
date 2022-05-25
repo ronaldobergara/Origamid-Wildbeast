@@ -32,7 +32,6 @@ img {
     ;
 }
 
-
 /* Header */
 
 .header {
@@ -100,9 +99,31 @@ img {
 
 /* Content */
 
-.content {
+.conteudo {
     grid-area: content;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    /* column-gap: 30px; */
 }
+
+/* Utilizado para expandir uma coluna ate o maximo */
+.col-wide {
+    grid-column: 1 / -1;
+}
+
+.imagem-1 {
+    grid-row: span 2;   
+    align-self: end; 
+}
+
+.imagem-2 {
+    align-self: end; 
+}
+
 
 /* Anuncios */
 
