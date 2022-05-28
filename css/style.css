@@ -17,7 +17,7 @@ a {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     border-radius: 5px;
 }
 
@@ -30,6 +30,7 @@ img {
         "sidenav content anuncios"
         "footer footer footer"
     ;
+    
 }
 
 /* Header */
@@ -106,8 +107,8 @@ img {
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 30px;
-    /* column-gap: 30px; */
+    gap: 30px;
+    
 }
 
 /* Utilizado para expandir uma coluna ate o maximo */
@@ -156,11 +157,9 @@ p {
 /* CARACTERISTICAS */
 .caracteristicas{
     display: grid;
-    /* align-items: flex-start; */
     grid-auto-rows: max-content;
     grid-auto-flow: column;
     grid-template-columns: 100px 100px;
-    justify-content: center;
     grid-template-areas: 
         "info1 info2"
 }
